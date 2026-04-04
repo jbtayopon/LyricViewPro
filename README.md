@@ -1,146 +1,102 @@
-# 🎤 LyricView Pro V2
+🎤 LyricView Pro
 
-**LyricView Pro V2** is a modern church presentation software designed for displaying song lyrics, Bible verses, and media during worship services.
-Built with simplicity, performance, and offline reliability in mind.
+LyricView Pro is a modern church presentation software designed for displaying song lyrics, Bible verses, and media during worship services.
+Built for simplicity, performance, and offline reliability.
 
----
+🚀 Installation Guide
+📦 Step 1: Download
 
-## ✨ Features
+Download the latest installer:
 
-* 🎶 **Song Lyrics Management**
+LyricViewPro_Setup.exe
+🖥️ Step 2: Install
+Double-click the installer
+Click Next → Install
+Wait for installation to complete
+Launch LyricViewPro
+📂 Step 3: Data Folder (IMPORTANT)
 
-  * Add, edit, and organize songs easily
-  * Multi-slide lyrics support (Verse, Chorus, Bridge)
+All user data is stored here:
 
-* 📖 **Bible Integration**
-
-  * Display Bible verses during service
-  * Clean and readable formatting
-
-* 🎬 **Media Background Support**
-
-  * Background images
-  * Video playback support
-  * Smooth transitions
-
-* 🖥️ **Live Output Window**
-
-  * Fullscreen presentation mode
-  * Auto-fit text scaling
-  * Clean stage display
-
-* 📱 **Remote Control (Web-based)**
-
-  * Control slides using phone
-  * QR Code access
-  * Works over local network
-
-* 🎨 **Modern UI**
-
-  * Dark mode support
-  * Clean and minimal interface
-
-* 💾 **Offline First**
-
-  * No internet required
-  * Local database storage
-
----
-
-## 🛠️ Built With
-
-* Python 3.11
-* PySide6 (Qt for Python)
-* SQLite Database
-* VLC / Qt Multimedia (for video playback)
-* Flask (for remote control)
-
----
-
-## 📂 Project Structure
-
-```
-LyricViewProV2/
-│
-├── LyricViewProV2.rar\
-|   ├── LyricViewProV2\
-|       ├── LyricViewProV2.exe
-├── googlebe2bd12bbff882de.html
-│
-└── README.md
-```
-
----
-
-## 📡 Remote Control
-
-* Automatically generates a QR code
-* Connect using your phone browser
-* Control:
-
-  * Next / Previous slide
-  * Go Live
-  * Black screen
-
----
-
-## 📸 Screenshots
-
-*(Add your screenshots here for better visibility)*
-
----
-
-## 💡 Use Case
-
-Perfect for:
-
-* Churches
-* Worship teams
-* Youth services
-* Small gatherings
-
----
-
-## 🔐 Data Storage
-
-All user data is stored locally:
-
-```
 C:\Users\Public\Documents\livecore\
-```
+This includes:
+🎶 Songs database
+🎬 Background images & videos
+📖 Bible files
+⚙️ App data
 
-Includes:
+👉 This folder is writable and safe for:
 
-* Songs
-* Media files
-* Database
+backups
+transferring to another PC
+manual editing (advanced users)
+✨ Features
+🎶 Song Lyrics Management
+Add, edit, and organize songs
+Multi-slide support (Verse, Chorus, Bridge)
+📖 Bible Integration
+Display Bible verses instantly
+Clean formatting for projection
+🎬 Media Backgrounds
+Image backgrounds
+Video playback
+Smooth transitions
+🖥️ Live Output Screen
+Fullscreen presentation
+Auto-fit lyrics
+Clean stage display
+📱 Mobile Remote
+Control using phone browser
+QR code connection
+Works on same Wi-Fi
+🎨 Modern UI
+Dark mode support
+Clean and responsive layout
+💾 Offline First
+No internet required
+Everything runs locally
+🛠️ Built With
+Python 3.11
+PySide6 (Qt for Python)
+SQLite
+Qt Multimedia / VLC
+Flask (Remote Control)
+📡 Remote Control
+Automatically generates a QR code
+Open on your phone browser
+Controls:
+Next / Previous
+Go Live
+Black Screen
+Logo toggle
 
----
+🔐 Versions
+🟢 LyricView Pro V1
+✅ Free to use
+✅ Basic features
+✅ No restrictions
 
-## ⚠️ Notes
+🔒 LyricView Pro V2
+🔐 Protected version
+🔑 Requires password to access
+🚀 Includes advanced features and improvements
+⚠️ Notes
+Install VLC for full video support (optional but recommended)
+Designed for Windows systems
+Make sure your PC and phone are on the same Wi-Fi for remote
+👨‍💻 Author
 
-* Make sure VLC is installed for video playback
-* Works best on Windows systems
+JBernard Tayopon
 
----
+📜 License
 
-## 👨‍💻 Author
+This software is protected.
+Unauthorized distribution of LyricView Pro V2 is not allowed.
 
-**JBernard Tayopon**
+⭐ Support
 
----
+If this project helps your church:
 
-## 📜 License
-
-This project is Secured With RAR Password.
-
----
-
-## ⭐ Support
-
-If you like this project:
-
-* ⭐ Star the repository
-* Share it with your church/team
-
----
+⭐ Star the repository
+📢 Share with your team
+🙏 Use it in ministry

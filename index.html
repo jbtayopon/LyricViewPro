@@ -1,514 +1,629 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="google-site-verification" content="YpamoLWTGZW5lgJ3FCcq0OvvxxCcL5HasIC_jkhxF5c" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LyricView Pro V2 | Church Presentation Software</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LyricView Pro | Download</title>
+  <meta name="description" content="Download LyricView Pro V1 and V2. Modern church presentation software for lyrics, Bible verses, and media." />
+  <link rel="icon" href="icon.ico" />
 
-    
-    <meta name="description" content="LyricView Pro V2 is a church presentation software for displaying song lyrics, images, videos, and live worship content." />
-    <meta name="keywords" content="church presentation software, worship software, lyrics software, bible verse display, church app, lyricview pro" />
-    <meta name="author" content="JBernard Tayopon" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-    <meta property="og:title" content="LyricView Pro V2" />
-    <meta property="og:description" content="Modern church presentation software for lyrics, and worship services." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://jbtayopon.github.io/LyricViewPro/" />
+    :root {
+      --bg: #0b1020;
+      --bg2: #131a2f;
+      --card: rgba(255,255,255,0.08);
+      --card-border: rgba(255,255,255,0.12);
+      --text: #ffffff;
+      --muted: #bfc7d9;
+      --primary: #4f7cff;
+      --primary-hover: #3d68e6;
+      --accent: #ff4fd8;
+      --yellow: #ffd54f;
+      --orange: #ff914d;
+      --shadow: 0 20px 60px rgba(0,0,0,0.35);
+      --radius: 24px;
+    }
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(79,124,255,0.2), transparent 30%),
+        radial-gradient(circle at top right, rgba(255,79,216,0.18), transparent 30%),
+        linear-gradient(135deg, var(--bg), var(--bg2));
+      color: var(--text);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
 
-        html {
-            scroll-behavior: smooth;
-        }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
 
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background: linear-gradient(135deg, #0b1220, #111827, #1e293b);
-            color: #ffffff;
-            line-height: 1.6;
-        }
+    .container {
+      width: min(1180px, 92%);
+      margin: 0 auto;
+    }
 
-        a {
-            text-decoration: none;
-        }
+    .navbar {
+      padding: 22px 0;
+    }
 
-        .container {
-            width: 90%;
-            max-width: 1150px;
-            margin: auto;
-        }
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 14px 20px;
+      border: 1px solid rgba(255,255,255,0.08);
+      background: rgba(255,255,255,0.04);
+      border-radius: 18px;
+      backdrop-filter: blur(12px);
+    }
 
-        header {
-            position: sticky;
-            top: 0;
-            z-index: 999;
-            background: rgba(11, 18, 32, 0.85);
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid rgba(255,255,255,0.08);
-        }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
 
-        .nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 18px 0;
-        }
+    .brand img {
+      width: 48px;
+      height: 48px;
+      object-fit: contain;
+      border-radius: 12px;
+      background: rgba(255,255,255,0.06);
+      padding: 6px;
+    }
 
-        .logo {
-            font-size: 1.4rem;
-            font-weight: 700;
-            letter-spacing: 0.5px;
-        }
+    .brand-text h1 {
+      font-size: 1.15rem;
+      line-height: 1.1;
+    }
 
-        .logo span {
-            color: #60a5fa;
-        }
+    .brand-text span {
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
 
-        .nav-links {
-            display: flex;
-            gap: 18px;
-            flex-wrap: wrap;
-        }
+    .nav-links {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
 
-        .nav-links a {
-            color: #dbeafe;
-            font-size: 0.95rem;
-            transition: 0.2s ease;
-        }
+    .nav-links a {
+      padding: 10px 16px;
+      border-radius: 12px;
+      color: var(--muted);
+      transition: 0.25s ease;
+    }
 
-        .nav-links a:hover {
-            color: #ffffff;
-        }
+    .nav-links a:hover {
+      background: rgba(255,255,255,0.08);
+      color: #fff;
+    }
 
-        .hero {
-            padding: 90px 0 70px;
-        }
+    .hero {
+      padding: 40px 0 30px;
+    }
 
-        .hero-wrap {
-            display: grid;
-            grid-template-columns: 1.2fr 1fr;
-            gap: 35px;
-            align-items: center;
-        }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 32px;
+      align-items: center;
+    }
 
-        .badge {
-            display: inline-block;
-            background: rgba(96, 165, 250, 0.15);
-            color: #93c5fd;
-            border: 1px solid rgba(147, 197, 253, 0.25);
-            padding: 8px 14px;
-            border-radius: 999px;
-            font-size: 0.85rem;
-            margin-bottom: 18px;
-        }
+    .hero-left h2 {
+      font-size: clamp(2.2rem, 5vw, 4rem);
+      line-height: 1.05;
+      margin-bottom: 18px;
+    }
 
-        .hero h1 {
-            font-size: 3rem;
-            line-height: 1.1;
-            margin-bottom: 18px;
-        }
+    .hero-left .gradient {
+      background: linear-gradient(90deg, #ffffff, #9db7ff, #ff9ced);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
 
-        .hero h1 span {
-            color: #60a5fa;
-        }
+    .hero-left p {
+      color: var(--muted);
+      font-size: 1.08rem;
+      line-height: 1.7;
+      max-width: 680px;
+      margin-bottom: 28px;
+    }
 
-        .hero p {
-            color: #cbd5e1;
-            font-size: 1.05rem;
-            max-width: 620px;
-            margin-bottom: 28px;
-        }
+    .hero-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
 
-        .hero-buttons {
-            display: flex;
-            gap: 14px;
-            flex-wrap: wrap;
-        }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 52px;
+      padding: 0 22px;
+      border-radius: 14px;
+      font-weight: 700;
+      transition: 0.25s ease;
+      border: 1px solid transparent;
+      cursor: pointer;
+    }
 
-        .btn {
-            display: inline-block;
-            padding: 14px 22px;
-            border-radius: 14px;
-            font-weight: 700;
-            transition: 0.25s ease;
-        }
+    .btn-primary {
+      background: var(--primary);
+      color: #fff;
+      box-shadow: 0 12px 30px rgba(79,124,255,0.3);
+    }
 
-        .btn-primary {
-            background: #2563eb;
-            color: white;
-            box-shadow: 0 10px 30px rgba(37, 99, 235, 0.35);
-        }
+    .btn-primary:hover {
+      background: var(--primary-hover);
+      transform: translateY(-2px);
+    }
 
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            background: #1d4ed8;
-        }
+    .btn-outline {
+      border-color: rgba(255,255,255,0.15);
+      background: rgba(255,255,255,0.05);
+      color: #fff;
+    }
 
-        .btn-secondary {
-            border: 1px solid rgba(255,255,255,0.15);
-            color: white;
-            background: rgba(255,255,255,0.04);
-        }
+    .btn-outline:hover {
+      background: rgba(255,255,255,0.1);
+      transform: translateY(-2px);
+    }
 
-        .btn-secondary:hover {
-            transform: translateY(-2px);
-            background: rgba(255,255,255,0.08);
-        }
+    .hero-card {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 28px;
+      padding: 28px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(14px);
+    }
 
-        .hero-card {
-            background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03));
-            border: 1px solid rgba(255,255,255,0.08);
-            border-radius: 24px;
-            padding: 24px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.35);
-        }
+    .mock-window {
+      background: #0f1426;
+      border-radius: 20px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
 
-        .window-bar {
-            display: flex;
-            gap: 8px;
-            margin-bottom: 18px;
-        }
+    .mock-topbar {
+      display: flex;
+      gap: 8px;
+      padding: 14px 16px;
+      background: rgba(255,255,255,0.04);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
 
-        .window-dot {
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-        }
+    .dot {
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+    }
 
-        .dot-red { background: #ef4444; }
-        .dot-yellow { background: #f59e0b; }
-        .dot-green { background: #22c55e; }
+    .dot.red { background: #ff5f57; }
+    .dot.yellow { background: #ffbd2e; }
+    .dot.green { background: #28c840; }
 
-        .mock-screen {
-            background: #0f172a;
-            border-radius: 18px;
-            padding: 22px;
-            min-height: 310px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            border: 1px solid rgba(255,255,255,0.06);
-        }
+    .mock-body {
+      padding: 20px;
+      display: grid;
+      gap: 14px;
+    }
 
-        .mock-top {
-            display: flex;
-            justify-content: space-between;
-            gap: 12px;
-            flex-wrap: wrap;
-        }
+    .mock-preview {
+      height: 210px;
+      border-radius: 18px;
+      background:
+        linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)),
+        url('https://images.unsplash.com/photo-1504052434569-70ad5836ab65?auto=format&fit=crop&w=1200&q=80') center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+      font-size: 1.4rem;
+      font-weight: 800;
+      line-height: 1.4;
+    }
 
-        .mock-pill {
-            background: rgba(37, 99, 235, 0.15);
-            color: #bfdbfe;
-            border: 1px solid rgba(96, 165, 250, 0.2);
-            padding: 8px 12px;
-            border-radius: 999px;
-            font-size: 0.8rem;
-        }
+    .mock-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 12px;
+    }
 
-        .lyrics-box {
-            margin-top: 22px;
-            background: linear-gradient(135deg, rgba(37,99,235,0.18), rgba(168,85,247,0.16));
-            border-radius: 18px;
-            padding: 26px;
-            text-align: center;
-            border: 1px solid rgba(255,255,255,0.08);
-        }
+    .mock-box {
+      height: 76px;
+      border-radius: 14px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.06);
+    }
 
-        .lyrics-label {
-            font-size: 0.85rem;
-            color: #93c5fd;
-            margin-bottom: 12px;
-        }
+    .section {
+      padding: 38px 0;
+    }
 
-        .lyrics-text {
-            font-size: 1.3rem;
-            font-weight: 700;
-            color: #ffffff;
-            line-height: 1.6;
-        }
+    .section-title {
+      text-align: center;
+      margin-bottom: 22px;
+    }
 
-        .mock-bottom {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 12px;
-            margin-top: 24px;
-        }
+    .section-title h3 {
+      font-size: clamp(1.7rem, 3vw, 2.4rem);
+      margin-bottom: 10px;
+    }
 
-        .mini-card {
-            background: rgba(255,255,255,0.05);
-            padding: 14px;
-            border-radius: 14px;
-            color: #cbd5e1;
-            font-size: 0.9rem;
-            text-align: center;
-        }
+    .section-title p {
+      color: var(--muted);
+      max-width: 760px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
 
-        section {
-            padding: 70px 0;
-        }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      margin-top: 28px;
+    }
 
-        .section-title {
-            text-align: center;
-            margin-bottom: 14px;
-            font-size: 2rem;
-        }
+    .feature {
+      background: var(--card);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      padding: 22px;
+      box-shadow: var(--shadow);
+    }
 
-        .section-subtitle {
-            text-align: center;
-            color: #cbd5e1;
-            max-width: 700px;
-            margin: 0 auto 42px;
-        }
+    .feature .icon {
+      font-size: 1.8rem;
+      margin-bottom: 14px;
+    }
 
-        .features {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 22px;
-        }
+    .feature h4 {
+      margin-bottom: 10px;
+      font-size: 1.05rem;
+    }
 
-        .feature-card {
-            background: rgba(255,255,255,0.05);
-            border: 1px solid rgba(255,255,255,0.07);
-            border-radius: 22px;
-            padding: 24px;
-            transition: 0.25s ease;
-        }
+    .feature p {
+      color: var(--muted);
+      line-height: 1.6;
+      font-size: 0.96rem;
+    }
 
-        .feature-card:hover {
-            transform: translateY(-4px);
-            background: rgba(255,255,255,0.08);
-        }
+    .downloads {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+      margin-top: 30px;
+    }
 
-        .feature-icon {
-            font-size: 1.8rem;
-            margin-bottom: 14px;
-        }
+    .download-card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.07), rgba(255,255,255,0.05));
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 24px;
+      padding: 28px;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
 
-        .feature-card h3 {
-            margin-bottom: 10px;
-            font-size: 1.1rem;
-        }
+    .download-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at top right, rgba(79,124,255,0.18), transparent 35%);
+      pointer-events: none;
+    }
 
-        .feature-card p {
-            color: #cbd5e1;
-            font-size: 0.95rem;
-        }
+    .tag {
+      display: inline-block;
+      padding: 7px 12px;
+      border-radius: 999px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      margin-bottom: 14px;
+      background: rgba(255,255,255,0.09);
+      color: #fff;
+    }
 
-        .about-box {
-            background: rgba(255,255,255,0.05);
-            border: 1px solid rgba(255,255,255,0.07);
-            border-radius: 24px;
-            padding: 30px;
-            text-align: center;
-            max-width: 900px;
-            margin: auto;
-        }
+    .download-card h4 {
+      font-size: 1.7rem;
+      margin-bottom: 12px;
+    }
 
-        .cta {
-            text-align: center;
-            background: linear-gradient(135deg, rgba(37,99,235,0.18), rgba(168,85,247,0.14));
-            border: 1px solid rgba(255,255,255,0.08);
-            padding: 45px 24px;
-            border-radius: 26px;
-        }
+    .download-card p {
+      color: var(--muted);
+      line-height: 1.7;
+      margin-bottom: 18px;
+    }
 
-        .cta h2 {
-            font-size: 2rem;
-            margin-bottom: 14px;
-        }
+    .download-list {
+      list-style: none;
+      margin-bottom: 22px;
+      display: grid;
+      gap: 10px;
+    }
 
-        .cta p {
-            color: #dbeafe;
-            max-width: 720px;
-            margin: 0 auto 24px;
-        }
+    .download-list li {
+      color: #e7ecf7;
+      padding-left: 22px;
+      position: relative;
+    }
 
-        footer {
-            padding: 28px 0 42px;
-            text-align: center;
-            color: #94a3b8;
-            font-size: 0.95rem;
-        }
+    .download-list li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      color: #9bd48f;
+    }
 
-        @media (max-width: 900px) {
-            .hero-wrap,
-            .features {
-                grid-template-columns: 1fr;
-            }
+    .download-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
 
-            .hero h1 {
-                font-size: 2.3rem;
-            }
+    .highlight {
+      border-color: rgba(79,124,255,0.45);
+    }
 
-            .mock-bottom {
-                grid-template-columns: 1fr;
-            }
+    .about-box {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 24px;
+      padding: 28px;
+      line-height: 1.8;
+      color: var(--muted);
+      box-shadow: var(--shadow);
+    }
 
-            .nav {
-                flex-direction: column;
-                gap: 14px;
-            }
-        }
-    </style>
+    footer {
+      padding: 36px 0 46px;
+      color: var(--muted);
+      text-align: center;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 980px) {
+      .hero-grid,
+      .downloads,
+      .features {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-left {
+        order: 1;
+      }
+
+      .hero-card {
+        order: 2;
+      }
+
+      .mock-row {
+        grid-template-columns: 1fr;
+      }
+
+      .nav-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .hero-left h2 {
+        font-size: 2rem;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .hero-actions,
+      .download-actions {
+        flex-direction: column;
+      }
+
+      .brand-text h1 {
+        font-size: 1rem;
+      }
+    }
+  </style>
 </head>
 <body>
 
-    <header>
-        <div class="container nav">
-            <div class="logo">LyricView <span>Pro V2</span></div>
-            <nav class="nav-links">
-                <a href="#features">Features</a>
-                <a href="#about">About</a>
-                <a href="#download">Download</a>
-                <a href="https://github.com/YOUR_USERNAME/YOUR_REPO_NAME" target="_blank">GitHub</a>
-            </nav>
+  <header class="navbar">
+    <div class="container">
+      <div class="nav-inner">
+        <div class="brand">
+          <img src="logo.png" alt="LyricView Pro Logo" onerror="this.style.display='none'">
+          <div class="brand-text">
+            <h1>LyricView Pro</h1>
+            <span>Church Presentation Software</span>
+          </div>
         </div>
-    </header>
 
+        <nav class="nav-links">
+          <a href="#features">Features</a>
+          <a href="#downloads">Downloads</a>
+          <a href="#about">About</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
     <section class="hero">
-        <div class="container hero-wrap">
-            <div>
-                <div class="badge">Modern Church Presentation Software</div>
-                <h1>Present lyrics and Bible verses with <span>clarity and style</span>.</h1>
-                <p>
-                    LyricView Pro V2 helps churches and worship teams display songs, Bible verses,
-                    images, videos, and live presentation slides in a clean and reliable way.
-                </p>
-
-                <div class="hero-buttons">
-                    <a class="btn btn-primary" href="#download">Download Now</a>
-                    <a class="btn btn-secondary" href="https://github.com/jbtayopon/LyricViewPro" target="_blank">View on GitHub</a>
-                </div>
-            </div>
-
-            <div class="hero-card">
-                <div class="window-bar">
-                    <div class="window-dot dot-red"></div>
-                    <div class="window-dot dot-yellow"></div>
-                    <div class="window-dot dot-green"></div>
-                </div>
-
-                <div class="mock-screen">
-                    <div class="mock-top">
-                        <div class="mock-pill">🎵 Song Lyrics</div>
-                        <div class="mock-pill">📖 Bible Verses</div>
-                        <div class="mock-pill">📱 Remote Control</div>
-                    </div>
-
-                    <div class="lyrics-box">
-                        <div class="lyrics-label">LIVE OUTPUT</div>
-                        <div class="lyrics-text">
-                            Amazing grace, how sweet the sound<br />
-                            That saved a wretch like me
-                        </div>
-                    </div>
-
-                    <div class="mock-bottom">
-                        <div class="mini-card">🖼 Background Images</div>
-                        <div class="mini-card">🎬 Video Playback</div>
-                        <div class="mini-card">🌙 Dark Mode UI</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="features">
-        <div class="container">
-            <h2 class="section-title">Features</h2>
-            <p class="section-subtitle">
-                Designed for worship services, youth gatherings, and church events with a focus on simplicity and reliability.
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-left">
+            <h2>
+              Present lyrics, Bible verses, and media with
+              <span class="gradient">LyricView Pro</span>
+            </h2>
+            <p>
+              A modern worship presentation software designed for churches.
+              Clean layout, smooth output, song scheduling, lyric slides,
+              media backgrounds, and a simple workflow for live services.
             </p>
 
-            <div class="features">
-                <div class="feature-card">
-                    <div class="feature-icon">🎶</div>
-                    <h3>Song Lyrics Management</h3>
-                    <p>Add, edit, and organize songs with support for verses, chorus, bridge, and multiple slides.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">📖</div>
-                    <h3>Bible Verse Display</h3>
-                    <p>Show scripture passages clearly during services with clean formatting and readable presentation.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">🎬</div>
-                    <h3>Media Backgrounds</h3>
-                    <p>Use images and videos as backgrounds to create a more engaging worship presentation.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">🖥️</div>
-                    <h3>Live Output Screen</h3>
-                    <p>Project your content on a separate screen with fullscreen support and auto-fit text display.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">📱</div>
-                    <h3>Phone Remote Control</h3>
-                    <p>Control slides from your mobile device through a local web-based remote with QR access.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">💾</div>
-                    <h3>Offline Reliability</h3>
-                    <p>Keep your songs, settings, and data stored locally so your service can run even without internet.</p>
-                </div>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#downloads">⬇ Download Now</a>
+              <a class="btn btn-outline" href="#features">✨ View Features</a>
             </div>
+          </div>
+
+          <div class="hero-card">
+            <div class="mock-window">
+              <div class="mock-topbar">
+                <div class="dot red"></div>
+                <div class="dot yellow"></div>
+                <div class="dot green"></div>
+              </div>
+              <div class="mock-body">
+                <div class="mock-preview">
+                  Amazing grace, how sweet the sound<br>
+                  That saved a wretch like me
+                </div>
+                <div class="mock-row">
+                  <div class="mock-box"></div>
+                  <div class="mock-box"></div>
+                  <div class="mock-box"></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
-    <section id="about">
-        <div class="container">
-            <h2 class="section-title">About LyricView Pro V2</h2>
-            <p class="section-subtitle">
-                Built to help churches present worship content more smoothly and professionally.
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-title">
+          <h3>Features</h3>
+          <p>
+            Built for worship teams that need a simple but powerful presentation tool.
+          </p>
+        </div>
+
+        <div class="features">
+          <div class="feature">
+            <div class="icon">🎶</div>
+            <h4>Song Lyrics Management</h4>
+            <p>Add, edit, organize, and present songs with multi-slide lyrics support.</p>
+          </div>
+
+          <div class="feature">
+            <div class="icon">📖</div>
+            <h4>Bible Verse Display</h4>
+            <p>Show Bible passages in a clean and readable presentation format.</p>
+          </div>
+
+          <div class="feature">
+            <div class="icon">🎬</div>
+            <h4>Media Backgrounds</h4>
+            <p>Use images or videos as slide backgrounds for a more engaging worship experience.</p>
+          </div>
+
+          <div class="feature">
+            <div class="icon">🖥️</div>
+            <h4>Live Output</h4>
+            <p>Display the program on a second screen with fullscreen output and clean lyrics.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="downloads">
+      <div class="container">
+        <div class="section-title">
+          <h3>Downloads</h3>
+          <p>
+            Choose which version you want to download. Since your files are in <strong>.rar</strong>,
+            the buttons below will directly download the archive.
+          </p>
+        </div>
+
+        <div class="downloads">
+          <div class="download-card">
+            <span class="tag">Legacy Version</span>
+            <h4>LyricView Pro V1</h4>
+            <p>
+              Good for users who still want the first version or need the older setup.
             </p>
 
-            <div class="about-box">
-                <p>
-                    LyricView Pro V2 is a desktop church presentation software created for worship leaders,
-                    media teams, and churches that need a simple but powerful tool for displaying lyrics,
-                    Bible verses, and media during worship services.
-                </p>
-                <br />
-                <p>
-                    It focuses on speed, clean presentation, modern design, and practical features that work well in real ministry settings.
-                </p>
+            <ul class="download-list">
+              <li>Classic layout</li>
+              <li>Basic lyric presentation</li>
+              <li>Simple workflow</li>
+            </ul>
+
+            <div class="download-actions">
+              <a class="btn btn-outline" href="LyricViewProV1.rar" download>
+                ⬇ Download V1
+              </a>
             </div>
+          </div>
+
+          <div class="download-card highlight">
+            <span class="tag">Latest Version</span>
+            <h4>LyricView Pro V2</h4>
+            <p>
+              Recommended version with improved design, better workflow, and more modern presentation features.
+            </p>
+
+            <ul class="download-list">
+              <li>Improved interface</li>
+              <li>Better media handling</li>
+              <li>More polished worship presentation experience</li>
+            </ul>
+
+            <div class="download-actions">
+              <a class="btn btn-primary" href="LyricViewProV2.rar" download>
+                ⬇ Download V2
+              </a>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
-    <section id="download">
-        <div class="container">
-            <div class="cta">
-                <h2>Download and try LyricView Pro V2</h2>
-                <p>
-                    Get the latest version, explore the source code, and use it for your worship services and presentations.
-                </p>
-
-                <div class="hero-buttons" style="justify-content:center;">
-                    <a class="btn btn-primary" href="https://github.com/jbtayopon/LyricViewPro/releases" target="_blank">Download Release</a>
-                    <a class="btn btn-secondary" href="https://github.com/jbtayopon/LyricViewPro" target="_blank">Source Code</a>
-                </div>
-            </div>
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-title">
+          <h3>About LyricView Pro</h3>
         </div>
+
+        <div class="about-box">
+          LyricView Pro is a church presentation software made for displaying
+          lyrics, Bible verses, and media during worship services. It is designed
+          to be simple, modern, and easy to use during live ministry.
+          <br><br>
+          You can host this page locally, upload it to GitHub Pages, or place it
+          inside your website as the main download page for your software.
+        </div>
+      </div>
     </section>
+  </main>
 
-    <footer>
-        <div class="container">
-            © 2026 JBernard Tayopon • LyricView Pro V2
-        </div>
-    </footer>
+  <footer>
+    <div class="container">
+      © 2026 LyricView Pro. Developed by JBernard Tayopon. All rights reserved.
+    </div>
+  </footer>
 
 </body>
 </html>
