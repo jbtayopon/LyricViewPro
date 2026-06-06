@@ -4,10 +4,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>LyricView Pro | Church Presentation Software Download</title>
 
-<meta name="description"
-content="Download LyricView Pro V1, V2, and V3. Modern church presentation software for lyrics, Bible verses, worship media, remote control, and live display.">
+  <title>LyricView Pro X | Church Presentation Software Download</title>
+
+  <meta name="description"
+    content="Download LyricView Pro X, V3, V2, and V1. Modern church presentation software for lyrics, Bible verses, worship media, remote control, schedule management, AI assistant, and live display.">
+
   <link rel="icon" href="icon.ico" />
 
   <style>
@@ -27,8 +29,6 @@ content="Download LyricView Pro V1, V2, and V3. Modern church presentation softw
       --primary: #4f7cff;
       --primary-hover: #3d68e6;
       --accent: #ff4fd8;
-      --yellow: #ffd54f;
-      --orange: #ff914d;
       --shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
       --radius: 24px;
     }
@@ -162,6 +162,7 @@ content="Download LyricView Pro V1, V2, and V3. Modern church presentation softw
       transition: 0.25s ease;
       border: 1px solid transparent;
       cursor: pointer;
+      text-align: center;
     }
 
     .btn-primary {
@@ -317,7 +318,7 @@ content="Download LyricView Pro V1, V2, and V3. Modern church presentation softw
 
     .downloads {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       gap: 22px;
       margin-top: 30px;
     }
@@ -340,6 +341,11 @@ content="Download LyricView Pro V1, V2, and V3. Modern church presentation softw
       pointer-events: none;
     }
 
+    .download-card>* {
+      position: relative;
+      z-index: 1;
+    }
+
     .tag {
       display: inline-block;
       padding: 7px 12px;
@@ -352,7 +358,7 @@ content="Download LyricView Pro V1, V2, and V3. Modern church presentation softw
     }
 
     .download-card h4 {
-      font-size: 1.7rem;
+      font-size: 1.55rem;
       margin-bottom: 12px;
     }
 
@@ -392,6 +398,19 @@ content="Download LyricView Pro V1, V2, and V3. Modern church presentation softw
       border-color: rgba(79, 124, 255, 0.45);
     }
 
+    .latest {
+      border-color: rgba(255, 79, 216, 0.55);
+      box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.35),
+        0 0 45px rgba(79, 124, 255, 0.18);
+    }
+
+    .latest::before {
+      background:
+        radial-gradient(circle at top right, rgba(255, 79, 216, 0.2), transparent 38%),
+        radial-gradient(circle at bottom left, rgba(79, 124, 255, 0.2), transparent 38%);
+    }
+
     .about-box {
       background: rgba(255, 255, 255, 0.05);
       border: 1px solid rgba(255, 255, 255, 0.1);
@@ -409,6 +428,12 @@ content="Download LyricView Pro V1, V2, and V3. Modern church presentation softw
       font-size: 0.95rem;
     }
 
+    @media (max-width: 1180px) {
+      .downloads {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
     @media (max-width: 980px) {
 
       .hero-grid,
@@ -416,28 +441,33 @@ content="Download LyricView Pro V1, V2, and V3. Modern church presentation softw
         grid-template-columns: 1fr;
       }
 
-      .downloads {
-        grid-template-columns: 1fr;
+      .hero-left {
+        order: 1;
+      }
+
+      .hero-card {
+        order: 2;
       }
     }
 
-    .hero-left {
-      order: 1;
-    }
+    @media (max-width: 700px) {
+      .downloads {
+        grid-template-columns: 1fr;
+      }
 
-    .hero-card {
-      order: 2;
-    }
+      .mock-row {
+        grid-template-columns: 1fr;
+      }
 
-    .mock-row {
-      grid-template-columns: 1fr;
-    }
+      .nav-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
 
-    .nav-inner {
-      flex-direction: column;
-      align-items: flex-start;
+      .nav-links {
+        width: 100%;
+      }
     }
-    
 
     @media (max-width: 640px) {
       .hero-left h2 {
@@ -466,9 +496,9 @@ content="Download LyricView Pro V1, V2, and V3. Modern church presentation softw
     <div class="container">
       <div class="nav-inner">
         <div class="brand">
-          <img src="logo.png" alt="LyricView Pro Logo" onerror="this.style.display='none'">
+          <img src="logo.png" alt="LyricView Pro X Logo" onerror="this.style.display='none'">
           <div class="brand-text">
-            <h1>LyricView Pro</h1>
+            <h1>LyricView Pro X</h1>
             <span>Church Presentation Software</span>
           </div>
         </div>
@@ -488,17 +518,18 @@ content="Download LyricView Pro V1, V2, and V3. Modern church presentation softw
         <div class="hero-grid">
           <div class="hero-left">
             <h2>
-              Present lyrics, Bible verses, and media with
-              <span class="gradient">LyricView Pro</span>
+              Present lyrics, Bible verses, schedules, and media with
+              <span class="gradient">LyricView Pro X</span>
             </h2>
+
             <p>
-              A modern worship presentation software designed for churches.
-              Clean layout, smooth output, song scheduling, lyric slides,
-              media backgrounds, and a simple workflow for live services.
+              A modern worship presentation software designed for churches and ministries.
+              Manage songs, Bible verses, schedules, image and video backgrounds, live output,
+              remote control, and AI-assisted lyrics search in one simple workflow.
             </p>
 
             <div class="hero-actions">
-              <a class="btn btn-primary" href="#downloads">⬇ Download Now</a>
+              <a class="btn btn-primary" href="#downloads">⬇ Download Latest</a>
               <a class="btn btn-outline" href="#features">✨ View Features</a>
             </div>
           </div>
@@ -510,11 +541,13 @@ content="Download LyricView Pro V1, V2, and V3. Modern church presentation softw
                 <div class="dot yellow"></div>
                 <div class="dot green"></div>
               </div>
+
               <div class="mock-body">
                 <div class="mock-preview">
                   Amazing grace, how sweet the sound<br>
                   That saved a wretch like me
                 </div>
+
                 <div class="mock-row">
                   <div class="mock-box"></div>
                   <div class="mock-box"></div>
@@ -523,6 +556,7 @@ content="Download LyricView Pro V1, V2, and V3. Modern church presentation softw
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>
@@ -532,33 +566,57 @@ content="Download LyricView Pro V1, V2, and V3. Modern church presentation softw
         <div class="section-title">
           <h3>Features</h3>
           <p>
-            Built for worship teams that need a simple but powerful presentation tool.
+            Built for worship teams that need a simple, modern, and powerful presentation tool.
           </p>
         </div>
 
         <div class="features">
           <div class="feature">
             <div class="icon">🎶</div>
-            <h4>Song Lyrics Management</h4>
-            <p>Add, edit, organize, and present songs with multi-slide lyrics support.</p>
+            <h4>Song Library</h4>
+            <p>Add, edit, organize, search, and present songs with multi-slide lyrics support.</p>
           </div>
 
           <div class="feature">
             <div class="icon">📖</div>
-            <h4>Bible Verse Display</h4>
-            <p>Show Bible passages in a clean and readable presentation format.</p>
+            <h4>Bible Module</h4>
+            <p>Search and display Bible passages in a clean, readable presentation format.</p>
+          </div>
+
+          <div class="feature">
+            <div class="icon">📅</div>
+            <h4>Schedule Management</h4>
+            <p>Create service flow, reorder items, and quickly send songs or verses to live output.</p>
           </div>
 
           <div class="feature">
             <div class="icon">🎬</div>
             <h4>Media Backgrounds</h4>
-            <p>Use images or videos as slide backgrounds for a more engaging worship experience.</p>
+            <p>Use images or videos as song backgrounds with per-slide media assignment.</p>
           </div>
 
           <div class="feature">
             <div class="icon">🖥️</div>
             <h4>Live Output</h4>
-            <p>Display the program on a second screen with fullscreen output and clean lyrics.</p>
+            <p>Display lyrics, Bible verses, and media on a second screen with clean fullscreen output.</p>
+          </div>
+
+          <div class="feature">
+            <div class="icon">📱</div>
+            <h4>Remote Control</h4>
+            <p>Control live presentation from a phone or tablet using QR code connection.</p>
+          </div>
+
+          <div class="feature">
+            <div class="icon">🤖</div>
+            <h4>AI Assistant</h4>
+            <p>Search lyrics online and import them into the editor faster during preparation.</p>
+          </div>
+
+          <div class="feature">
+            <div class="icon">⚡</div>
+            <h4>Modern Workflow</h4>
+            <p>Improved UI, responsive layout, better preview, and smoother worship operation.</p>
           </div>
         </div>
       </div>
@@ -569,17 +627,20 @@ content="Download LyricView Pro V1, V2, and V3. Modern church presentation softw
         <div class="section-title">
           <h3>Downloads</h3>
           <p>
-            Choose which version you want to download. Since your files are in <strong>.rar</strong>,
-            the buttons below will directly download the archive.
+            Choose which version you want to download. For the best experience,
+            download the latest LyricView Pro X installer.
           </p>
         </div>
 
         <div class="downloads">
+
           <div class="download-card">
             <span class="tag">Legacy Version</span>
+
             <h4>LyricView Pro V1</h4>
+
             <p>
-              Good for users who still want the first version or need the older setup.
+              The original version of LyricView Pro with a simple and lightweight workflow.
             </p>
 
             <ul class="download-list">
@@ -589,57 +650,92 @@ content="Download LyricView Pro V1, V2, and V3. Modern church presentation softw
             </ul>
 
             <div class="download-actions">
-              <a class="btn btn-outline" href="https://github.com/jbtayopon/LyricViewPro/releases/download/v1.0.0/LyricViewProV1.rar" target="_blank">
+              <a class="btn btn-outline"
+                href="https://github.com/jbtayopon/LyricViewPro/releases/download/v1.0.0/LyricViewProV1.rar"
+                target="_blank">
                 ⬇ Download V1
               </a>
             </div>
           </div>
 
-          <div class="download-card highlight">
-            <span class="tag">Latest Version</span>
+          <div class="download-card">
+            <span class="tag">Legacy Version</span>
+
             <h4>LyricView Pro V2</h4>
+
             <p>
-              Recommended version with improved design, better workflow, and more modern presentation features.
+              Improved interface and better media support compared to V1.
             </p>
 
             <ul class="download-list">
               <li>Improved interface</li>
-              <li>Better media handling</li>
-              <li>More polished worship presentation experience</li>
+              <li>Enhanced media support</li>
+              <li>More polished workflow</li>
             </ul>
 
             <div class="download-actions">
-              <a class="btn btn-primary" href="https://github.com/jbtayopon/LyricViewPro/releases/download/v2.0.0/LyricViewProV2.rar" target="_blank">
+              <a class="btn btn-outline"
+                href="https://github.com/jbtayopon/LyricViewPro/releases/download/v2.0.0/LyricViewProV2.rar"
+                target="_blank">
                 ⬇ Download V2
               </a>
             </div>
           </div>
 
           <div class="download-card highlight">
-            <span class="tag">Newest Version</span>
+            <span class="tag">Previous Stable</span>
 
             <h4>LyricView Pro V3</h4>
 
             <p>
-              The newest and most advanced version of LyricView Pro with improved
-              remote control, live preview enhancements, better media handling,
-              modern UI improvements, and smoother worship presentation workflow.
+              Modern interface with remote control and improved live presentation tools.
             </p>
 
             <ul class="download-list">
-              <li>Modern redesigned interface</li>
-              <li>Remote control with QR connection</li>
-              <li>Improved live preview system</li>
-              <li>Better video and media support</li>
-              <li>Enhanced lyric presentation</li>
+              <li>Remote control support</li>
+              <li>Live preview improvements</li>
+              <li>Better media handling</li>
+              <li>Modern UI</li>
             </ul>
 
             <div class="download-actions">
-              <a class="btn btn-primary" href="https://github.com/jbtayopon/LyricViewPro/releases/download/v3.0.0/LyricViewProV3.rar" target="_blank">
+              <a class="btn btn-outline"
+                href="https://github.com/jbtayopon/LyricViewPro/releases/download/v3.0.0/LyricViewProV3.rar"
+                target="_blank">
                 ⬇ Download V3
               </a>
             </div>
           </div>
+
+          <div class="download-card latest">
+            <span class="tag">Latest Version</span>
+
+            <h4>LyricView Pro X</h4>
+
+            <p>
+              The most advanced version with schedule management, Bible support,
+              AI assistant, media backgrounds, QR remote control, and improved worship workflow.
+            </p>
+
+            <ul class="download-list">
+              <li>Song Library</li>
+              <li>Bible Module</li>
+              <li>Schedule Management</li>
+              <li>Image and Video Backgrounds</li>
+              <li>QR Remote Control</li>
+              <li>AI Lyrics Assistant</li>
+              <li>Live Output and Preview</li>
+            </ul>
+
+            <div class="download-actions">
+              <a class="btn btn-primary"
+                href="https://github.com/jbtayopon/LyricViewPro/releases/download/v4.0.0/LyricViewProX_Setup.exe"
+                target="_blank">
+                ⬇ Download Pro X
+              </a>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
@@ -647,13 +743,16 @@ content="Download LyricView Pro V1, V2, and V3. Modern church presentation softw
     <section class="section" id="about">
       <div class="container">
         <div class="section-title">
-          <h3>About LyricView Pro</h3>
+          <h3>About LyricView Pro X</h3>
         </div>
 
         <div class="about-box">
-          LyricView Pro is a church presentation software made for displaying
-          lyrics, Bible verses, and media during worship services. It is designed
-          to be simple, modern, and easy to use during live ministry.
+          LyricView Pro X is a church presentation software made for displaying
+          lyrics, Bible verses, schedules, and media during worship services.
+          It is designed to be simple, modern, and easy to use during live ministry.
+          <br><br>
+          It supports song lyrics, Bible verse display, live output, media backgrounds,
+          schedule management, QR remote control, and AI-assisted lyrics import.
           <br><br>
           You can host this page locally, upload it to GitHub Pages, or place it
           inside your website as the main download page for your software.
@@ -664,7 +763,7 @@ content="Download LyricView Pro V1, V2, and V3. Modern church presentation softw
 
   <footer>
     <div class="container">
-      © 2026 LyricView Pro. Developed by JBernard Tayopon. All rights reserved.
+      © 2026 LyricView Pro X. Developed by JBernard Tayopon. All rights reserved.
     </div>
   </footer>
 
