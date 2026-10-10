@@ -5,10 +5,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>LyricView Pro X | Church Presentation Software Download</title>
+  <meta name="google-site-verification"
+    content="6zjtQTudLDPvzfun0l8BkTm78wR8M3MXVdLYzfcTJEA" />
+
+  <title>LyricView Pro | Church Presentation Software Download</title>
 
   <meta name="description"
-    content="Download LyricView Pro X, V3, V2, and V1. Modern church presentation software for lyrics, Bible verses, worship media, remote control, schedule management, AI assistant, and live display.">
+    content="Download LyricView Pro V1, V2, V3, X, and X Studio. Modern church presentation software for lyrics, Bible verses, worship media, remote control, schedule management, and live display.">
 
   <link rel="icon" href="icon.ico" />
 
@@ -36,8 +39,16 @@
     body {
       font-family: "Segoe UI", Arial, sans-serif;
       background:
-        radial-gradient(circle at top left, rgba(79, 124, 255, 0.2), transparent 30%),
-        radial-gradient(circle at top right, rgba(255, 79, 216, 0.18), transparent 30%),
+        radial-gradient(
+          circle at top left,
+          rgba(79, 124, 255, 0.2),
+          transparent 30%
+        ),
+        radial-gradient(
+          circle at top right,
+          rgba(255, 79, 216, 0.18),
+          transparent 30%
+        ),
         linear-gradient(135deg, var(--bg), var(--bg2));
       color: var(--text);
       min-height: 100vh;
@@ -53,6 +64,10 @@
       width: min(1180px, 92%);
       margin: 0 auto;
     }
+
+    /* =====================================================
+       NAVBAR
+    ===================================================== */
 
     .navbar {
       padding: 22px 0;
@@ -113,6 +128,10 @@
       color: #fff;
     }
 
+    /* =====================================================
+       HERO
+    ===================================================== */
+
     .hero {
       padding: 40px 0 30px;
     }
@@ -131,11 +150,15 @@
     }
 
     .hero-left .gradient {
-      background: linear-gradient(90deg, #ffffff, #9db7ff, #ff9ced);
+      background: linear-gradient(
+        90deg,
+        #ffffff,
+        #9db7ff,
+        #ff9ced
+      );
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
-    
 
     .hero-left p {
       color: var(--muted);
@@ -150,6 +173,10 @@
       gap: 14px;
       flex-wrap: wrap;
     }
+
+    /* =====================================================
+       BUTTONS
+    ===================================================== */
 
     .btn {
       display: inline-flex;
@@ -169,7 +196,8 @@
     .btn-primary {
       background: var(--primary);
       color: #fff;
-      box-shadow: 0 12px 30px rgba(79, 124, 255, 0.3);
+      box-shadow:
+        0 12px 30px rgba(79, 124, 255, 0.3);
     }
 
     .btn-primary:hover {
@@ -187,6 +215,10 @@
       background: rgba(255, 255, 255, 0.1);
       transform: translateY(-2px);
     }
+
+    /* =====================================================
+       HERO MOCKUP
+    ===================================================== */
 
     .hero-card {
       background: rgba(255, 255, 255, 0.06);
@@ -240,8 +272,13 @@
       height: 210px;
       border-radius: 18px;
       background:
-        linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
-        url('https://images.unsplash.com/photo-1504052434569-70ad5836ab65?auto=format&fit=crop&w=1200&q=80') center/cover;
+        linear-gradient(
+          rgba(0, 0, 0, 0.3),
+          rgba(0, 0, 0, 0.5)
+        ),
+        url(
+          'https://images.unsplash.com/photo-1504052434569-70ad5836ab65?auto=format&fit=crop&w=1200&q=80'
+        ) center/cover;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -265,6 +302,10 @@
       border: 1px solid rgba(255, 255, 255, 0.06);
     }
 
+    /* =====================================================
+       SECTIONS
+    ===================================================== */
+
     .section {
       padding: 38px 0;
     }
@@ -285,6 +326,10 @@
       margin: 0 auto;
       line-height: 1.7;
     }
+
+    /* =====================================================
+       FEATURES
+    ===================================================== */
 
     .features {
       display: grid;
@@ -317,15 +362,24 @@
       font-size: 0.96rem;
     }
 
+    /* =====================================================
+       DOWNLOADS
+    ===================================================== */
+
     .downloads {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       gap: 22px;
       margin-top: 30px;
     }
 
     .download-card {
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.05));
+      background:
+        linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.07),
+          rgba(255, 255, 255, 0.05)
+        );
       border: 1px solid rgba(255, 255, 255, 0.12);
       border-radius: 24px;
       padding: 28px;
@@ -338,11 +392,16 @@
       content: "";
       position: absolute;
       inset: 0;
-      background: radial-gradient(circle at top right, rgba(79, 124, 255, 0.18), transparent 35%);
+      background:
+        radial-gradient(
+          circle at top right,
+          rgba(79, 124, 255, 0.18),
+          transparent 35%
+        );
       pointer-events: none;
     }
 
-    .download-card>* {
+    .download-card > * {
       position: relative;
       z-index: 1;
     }
@@ -408,9 +467,21 @@
 
     .latest::before {
       background:
-        radial-gradient(circle at top right, rgba(255, 79, 216, 0.2), transparent 38%),
-        radial-gradient(circle at bottom left, rgba(79, 124, 255, 0.2), transparent 38%);
+        radial-gradient(
+          circle at top right,
+          rgba(255, 79, 216, 0.2),
+          transparent 38%
+        ),
+        radial-gradient(
+          circle at bottom left,
+          rgba(79, 124, 255, 0.2),
+          transparent 38%
+        );
     }
+
+    /* =====================================================
+       ABOUT
+    ===================================================== */
 
     .about-box {
       background: rgba(255, 255, 255, 0.05);
@@ -422,12 +493,20 @@
       box-shadow: var(--shadow);
     }
 
+    /* =====================================================
+       FOOTER
+    ===================================================== */
+
     footer {
       padding: 36px 0 46px;
       color: var(--muted);
       text-align: center;
       font-size: 0.95rem;
     }
+
+    /* =====================================================
+       RESPONSIVE
+    ===================================================== */
 
     @media (max-width: 1180px) {
       .downloads {
@@ -452,6 +531,7 @@
     }
 
     @media (max-width: 700px) {
+
       .downloads {
         grid-template-columns: 1fr;
       }
@@ -471,6 +551,7 @@
     }
 
     @media (max-width: 640px) {
+
       .hero-left h2 {
         font-size: 2rem;
       }
@@ -493,282 +574,780 @@
 
 <body>
 
+  <!-- =====================================================
+       NAVBAR
+  ====================================================== -->
+
   <header class="navbar">
     <div class="container">
+
       <div class="nav-inner">
+
         <div class="brand">
-          <img src="logo.png" alt="LyricView Pro X Logo" onerror="this.style.display='none'">
+
+          <img
+            src="logo.png"
+            alt="LyricView Pro Logo"
+            onerror="this.style.display='none'"
+          >
+
           <div class="brand-text">
-            <h1>LyricView Pro X</h1>
-            <span>Church Presentation Software</span>
+
+            <h1>LyricView Pro</h1>
+
+            <span>
+              Church Presentation Software
+            </span>
+
           </div>
+
         </div>
 
         <nav class="nav-links">
-          <a href="#features">Features</a>
-          <a href="#downloads">Downloads</a>
-          <a href="#about">About</a>
+
+          <a href="#features">
+            Features
+          </a>
+
+          <a href="#downloads">
+            Downloads
+          </a>
+
+          <a href="#about">
+            About
+          </a>
+
         </nav>
+
       </div>
+
     </div>
   </header>
 
+
   <main>
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+
     <section class="hero">
+
       <div class="container">
+
         <div class="hero-grid">
+
           <div class="hero-left">
+
             <h2>
-              Present lyrics, Bible verses, schedules, and media with
-              <span class="gradient">LyricView Pro X</span>
+
+              Present lyrics, Bible verses, schedules,
+              and media with
+
+              <span class="gradient">
+                LyricView Pro
+              </span>
+
             </h2>
 
             <p>
-              A modern worship presentation software designed for churches and ministries.
-              Manage songs, Bible verses, schedules, image and video backgrounds, live output,
-              remote control, and AI-assisted lyrics search in one simple workflow.
+
+              A modern church presentation software
+              designed for churches and ministries.
+
+              Manage songs, Bible verses, schedules,
+              image and video backgrounds, live output,
+              remote control, and presentation tools
+              through the LyricView Pro software family.
+
             </p>
 
             <div class="hero-actions">
-              <a class="btn btn-primary" href="#downloads">⬇ Download Latest</a>
-              <a class="btn btn-outline" href="#features">✨ View Features</a>
+
+              <a
+                class="btn btn-primary"
+                href="#downloads"
+              >
+                ⬇ Download Latest
+              </a>
+
+              <a
+                class="btn btn-outline"
+                href="#features"
+              >
+                ✨ View Features
+              </a>
+
             </div>
+
           </div>
 
+
           <div class="hero-card">
+
             <div class="mock-window">
+
               <div class="mock-topbar">
+
                 <div class="dot red"></div>
                 <div class="dot yellow"></div>
                 <div class="dot green"></div>
+
               </div>
 
               <div class="mock-body">
+
                 <div class="mock-preview">
-                  Amazing grace, how sweet the sound<br>
+
+                  Amazing grace, how sweet the sound
+                  <br>
                   That saved a wretch like me
+
                 </div>
 
                 <div class="mock-row">
+
                   <div class="mock-box"></div>
                   <div class="mock-box"></div>
                   <div class="mock-box"></div>
+
                 </div>
+
               </div>
+
             </div>
+
           </div>
 
         </div>
+
       </div>
+
     </section>
 
-    <section class="section" id="features">
+
+    <!-- =====================================================
+         FEATURES
+    ====================================================== -->
+
+    <section
+      class="section"
+      id="features"
+    >
+
       <div class="container">
+
         <div class="section-title">
-          <h3>Features</h3>
+
+          <h3>
+            Features
+          </h3>
+
           <p>
-            Built for worship teams that need a simple, modern, and powerful presentation tool.
+            Built for worship teams that need
+            a simple, modern, and powerful
+            presentation tool.
           </p>
+
         </div>
+
 
         <div class="features">
-          <div class="feature">
-            <div class="icon">🎶</div>
-            <h4>Song Library</h4>
-            <p>Add, edit, organize, search, and present songs with multi-slide lyrics support.</p>
-          </div>
 
           <div class="feature">
-            <div class="icon">📖</div>
-            <h4>Bible Module</h4>
-            <p>Search and display Bible passages in a clean, readable presentation format.</p>
+
+            <div class="icon">
+              🎶
+            </div>
+
+            <h4>
+              Song Library
+            </h4>
+
+            <p>
+              Add, edit, organize, search,
+              and present songs with
+              multi-slide lyrics support.
+            </p>
+
           </div>
 
-          <div class="feature">
-            <div class="icon">📅</div>
-            <h4>Schedule Management</h4>
-            <p>Create service flow, reorder items, and quickly send songs or verses to live output.</p>
-          </div>
 
           <div class="feature">
-            <div class="icon">🎬</div>
-            <h4>Media Backgrounds</h4>
-            <p>Use images or videos as song backgrounds with per-slide media assignment.</p>
+
+            <div class="icon">
+              📖
+            </div>
+
+            <h4>
+              Bible Module
+            </h4>
+
+            <p>
+              Search and display Bible
+              passages in a clean,
+              readable presentation format.
+            </p>
+
           </div>
 
-          <div class="feature">
-            <div class="icon">🖥️</div>
-            <h4>Live Output</h4>
-            <p>Display lyrics, Bible verses, and media on a second screen with clean fullscreen output.</p>
-          </div>
 
           <div class="feature">
-            <div class="icon">📱</div>
-            <h4>Remote Control</h4>
-            <p>Control live presentation from a phone or tablet using QR code connection.</p>
+
+            <div class="icon">
+              📅
+            </div>
+
+            <h4>
+              Schedule Management
+            </h4>
+
+            <p>
+              Create service flow,
+              reorder items, and quickly
+              send songs or verses to live output.
+            </p>
+
           </div>
 
-          <div class="feature">
-            <div class="icon">🤖</div>
-            <h4>AI Assistant</h4>
-            <p>Search lyrics online and import them into the editor faster during preparation.</p>
-          </div>
 
           <div class="feature">
-            <div class="icon">⚡</div>
-            <h4>Modern Workflow</h4>
-            <p>Improved UI, responsive layout, better preview, and smoother worship operation.</p>
+
+            <div class="icon">
+              🎬
+            </div>
+
+            <h4>
+              Media Backgrounds
+            </h4>
+
+            <p>
+              Use images or videos as
+              song backgrounds with
+              per-slide media assignment.
+            </p>
+
           </div>
+
+
+          <div class="feature">
+
+            <div class="icon">
+              🖥️
+            </div>
+
+            <h4>
+              Live Output
+            </h4>
+
+            <p>
+              Display lyrics, Bible verses,
+              and media on a second screen
+              with clean fullscreen output.
+            </p>
+
+          </div>
+
+
+          <div class="feature">
+
+            <div class="icon">
+              📱
+            </div>
+
+            <h4>
+              Remote Control
+            </h4>
+
+            <p>
+              Control live presentation
+              from a phone or tablet
+              using QR code connection.
+            </p>
+
+          </div>
+
+
+          <div class="feature">
+
+            <div class="icon">
+              🤖
+            </div>
+
+            <h4>
+              AI Assistant
+            </h4>
+
+            <p>
+              Search lyrics online and
+              import them into the editor
+              faster during preparation.
+            </p>
+
+          </div>
+
+
+          <div class="feature">
+
+            <div class="icon">
+              ⚡
+            </div>
+
+            <h4>
+              Modern Workflow
+            </h4>
+
+            <p>
+              Improved UI, responsive layout,
+              better preview, and smoother
+              worship operation.
+            </p>
+
+          </div>
+
         </div>
+
       </div>
+
     </section>
 
-    <section class="section" id="downloads">
+
+    <!-- =====================================================
+         DOWNLOADS
+    ====================================================== -->
+
+    <section
+      class="section"
+      id="downloads"
+    >
+
       <div class="container">
+
         <div class="section-title">
-          <h3>Downloads</h3>
+
+          <h3>
+            Downloads
+          </h3>
+
           <p>
-            Choose which version you want to download. For the best experience,
-            download the latest LyricView Pro X installer.
+
+            Choose an edition of LyricView Pro.
+            From the original legacy releases
+            to the latest LyricView Pro X Studio.
+
           </p>
+
         </div>
+
 
         <div class="downloads">
 
-          <div class="download-card">
-            <span class="tag">Legacy Version</span>
+          <!-- =================================================
+               V1
+          ================================================== -->
 
-            <h4>LyricView Pro V1</h4>
+          <div class="download-card">
+
+            <span class="tag">
+              Legacy Version
+            </span>
+
+            <h4>
+              LyricView Pro V1
+            </h4>
 
             <p>
-              The original version of LyricView Pro with a simple and lightweight workflow.
+
+              The original version of
+              LyricView Pro with a simple
+              and lightweight workflow.
+
             </p>
 
             <ul class="download-list">
-              <li>Classic layout</li>
-              <li>Basic lyric presentation</li>
-              <li>Simple workflow</li>
+
+              <li>
+                Classic layout
+              </li>
+
+              <li>
+                Basic lyric presentation
+              </li>
+
+              <li>
+                Simple workflow
+              </li>
+
             </ul>
 
             <div class="download-actions">
-              <a class="btn btn-outline"
+
+              <a
+                class="btn btn-outline"
                 href="https://github.com/jbtayopon/LyricViewPro/releases/download/v1.0.0/LyricViewProV1.rar"
-                target="_blank">
+                target="_blank"
+              >
                 ⬇ Download V1
               </a>
+
             </div>
+
           </div>
+
+
+          <!-- =================================================
+               V2
+          ================================================== -->
 
           <div class="download-card">
-            <span class="tag">Legacy Version</span>
 
-            <h4>LyricView Pro V2</h4>
+            <span class="tag">
+              Legacy Version
+            </span>
+
+            <h4>
+              LyricView Pro V2
+            </h4>
 
             <p>
-              Improved interface and better media support compared to V1.
+
+              Improved interface and better
+              media support compared to V1.
+
             </p>
 
             <ul class="download-list">
-              <li>Improved interface</li>
-              <li>Enhanced media support</li>
-              <li>More polished workflow</li>
+
+              <li>
+                Improved interface
+              </li>
+
+              <li>
+                Enhanced media support
+              </li>
+
+              <li>
+                More polished workflow
+              </li>
+
             </ul>
 
             <div class="download-actions">
-              <a class="btn btn-outline"
+
+              <a
+                class="btn btn-outline"
                 href="https://github.com/jbtayopon/LyricViewPro/releases/download/v2.0.0/LyricViewProV2.rar"
-                target="_blank">
+                target="_blank"
+              >
                 ⬇ Download V2
               </a>
+
             </div>
+
           </div>
+
+
+          <!-- =================================================
+               V3
+          ================================================== -->
 
           <div class="download-card highlight">
-            <span class="tag">Previous Stable</span>
 
-            <h4>LyricView Pro V3</h4>
+            <span class="tag">
+              Previous Stable
+            </span>
+
+            <h4>
+              LyricView Pro V3
+            </h4>
 
             <p>
-              Modern interface with remote control and improved live presentation tools.
+
+              Modern interface with remote
+              control and improved live
+              presentation tools.
+
             </p>
 
             <ul class="download-list">
-              <li>Remote control support</li>
-              <li>Live preview improvements</li>
-              <li>Better media handling</li>
-              <li>Modern UI</li>
+
+              <li>
+                Remote control support
+              </li>
+
+              <li>
+                Live preview improvements
+              </li>
+
+              <li>
+                Better media handling
+              </li>
+
+              <li>
+                Modern UI
+              </li>
+
             </ul>
 
             <div class="download-actions">
-              <a class="btn btn-outline"
+
+              <a
+                class="btn btn-outline"
                 href="https://github.com/jbtayopon/LyricViewPro/releases/download/v3.0.0/LyricViewProV3.rar"
-                target="_blank">
+                target="_blank"
+              >
                 ⬇ Download V3
               </a>
+
             </div>
+
           </div>
 
-          <div class="download-card latest">
-            <span class="tag">Latest Version</span>
 
-            <h4>LyricView Pro X</h4>
+          <!-- =================================================
+               X
+          ================================================== -->
+
+          <div class="download-card highlight">
+
+            <span class="tag">
+              Advanced Version
+            </span>
+
+            <h4>
+              LyricView Pro X
+            </h4>
 
             <p>
-              The most advanced version with schedule management, Bible support,
-              AI assistant, media backgrounds, QR remote control, and improved worship workflow.
+
+              An advanced edition of LyricView Pro
+              with expanded worship presentation,
+              schedule, Bible, media, and remote
+              control capabilities.
+
             </p>
 
             <ul class="download-list">
-              <li>Song Library</li>
-              <li>Bible Module</li>
-              <li>Schedule Management</li>
-              <li>Image and Video Backgrounds</li>
-              <li>QR Remote Control</li>
-              <li>AI Lyrics Assistant</li>
-              <li>Live Output and Preview</li>
+
+              <li>
+                Song Library
+              </li>
+
+              <li>
+                Bible Module
+              </li>
+
+              <li>
+                Schedule Management
+              </li>
+
+              <li>
+                Image and Video Backgrounds
+              </li>
+
+              <li>
+                QR Remote Control
+              </li>
+
+              <li>
+                AI Lyrics Assistant
+              </li>
+
+              <li>
+                Live Output and Preview
+              </li>
+
             </ul>
 
             <div class="download-actions">
-              <a class="btn btn-primary"
+
+              <a
+                class="btn btn-outline"
                 href="https://github.com/jbtayopon/LyricViewPro/releases/download/v4.0.0/LyricViewProX.rar"
-                target="_blank">
-                ⬇ Download Pro X
+                target="_blank"
+              >
+                ⬇ Download X
               </a>
+
             </div>
+
+          </div>
+
+
+          <!-- =================================================
+               X STUDIO
+          ================================================== -->
+
+          <div class="download-card latest">
+
+            <span class="tag">
+              Latest Version
+            </span>
+
+            <h4>
+              LyricView Pro X Studio
+            </h4>
+
+            <p>
+
+              The newest Studio edition of
+              LyricView Pro, designed for advanced
+              presentation preparation, slide
+              composition, multimedia, and live
+              presentation control.
+
+            </p>
+
+            <ul class="download-list">
+
+              <li>
+                Dedicated Studio Editor
+              </li>
+
+              <li>
+                Advanced Slide Composition
+              </li>
+
+              <li>
+                Text, Image, Video, and Objects
+              </li>
+
+              <li>
+                .lvp Project Support
+              </li>
+
+              <li>
+                PowerPoint Import
+              </li>
+
+              <li>
+                Live Output and Multi-Monitor
+              </li>
+
+              <li>
+                Song Library and Bible Module
+              </li>
+
+              <li>
+                Schedule Management
+              </li>
+
+              <li>
+                Remote Control
+              </li>
+
+              <li>
+                Media Backgrounds
+              </li>
+
+            </ul>
+
+            <div class="download-actions">
+
+              <a
+                class="btn btn-primary"
+                href="https://github.com/jbtayopon/LyricViewPro/releases/download/v5.0.0/LyricViewProXStudio.rar"
+                target="_blank"
+              >
+                ⬇ Download X Studio
+              </a>
+
+            </div>
+
           </div>
 
         </div>
+
       </div>
+
     </section>
 
-    <section class="section" id="about">
+
+    <!-- =====================================================
+         ABOUT
+    ====================================================== -->
+
+    <section
+      class="section"
+      id="about"
+    >
+
       <div class="container">
+
         <div class="section-title">
-          <h3>About LyricView Pro X</h3>
+
+          <h3>
+            About LyricView Pro
+          </h3>
+
         </div>
+
 
         <div class="about-box">
-          LyricView Pro X is a church presentation software made for displaying
-          lyrics, Bible verses, schedules, and media during worship services.
-          It is designed to be simple, modern, and easy to use during live ministry.
+
+          <strong>
+            LyricView Pro
+          </strong>
+          is a church presentation software
+          family designed for displaying lyrics,
+          Bible verses, schedules, and media
+          during worship services.
+
           <br><br>
-          It supports song lyrics, Bible verse display, live output, media backgrounds,
-          schedule management, QR remote control, and AI-assisted lyrics import.
+
+          The LyricView Pro family includes
+          multiple generations and editions,
+          from the original V1 and V2 releases,
+          through V3 and the advanced
+          <strong>LyricView Pro X</strong>,
+          to the latest
+          <strong>LyricView Pro X Studio</strong>.
+
           <br><br>
-          You can host this page locally, upload it to GitHub Pages, or place it
-          inside your website as the main download page for your software.
+
+          LyricView Pro X provides expanded
+          presentation, media, Bible, schedule,
+          and remote control capabilities.
+
+          LyricView Pro X Studio builds upon
+          the X generation with a dedicated
+          Studio Editor workflow for creating
+          advanced slide compositions,
+          multimedia presentations, and
+          LyricView Pro project files.
+
+          <br><br>
+
+          LyricView Pro is designed to provide
+          churches and worship teams with a
+          flexible presentation workflow for
+          preparing and operating live services.
+
         </div>
+
       </div>
+
     </section>
+
   </main>
 
+
+  <!-- =====================================================
+       FOOTER
+  ====================================================== -->
+
   <footer>
+
     <div class="container">
-      © 2026 LyricView Pro X. Developed by JBernard Tayopon. All rights reserved.
+
+      © 2026 LyricView Pro.
+      Developed by JBernard Tayopon.
+      All rights reserved.
+
     </div>
+
   </footer>
 
 </body>
 
 </html>
-
